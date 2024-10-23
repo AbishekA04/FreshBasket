@@ -21,13 +21,15 @@
         <h2>Our Products</h2>
         <div class="product-list">
             <div class="product-item">
-                <img src="/static/img/apple.jpg" alt="Apple">
+                <!-- Dynamically load image using url_for -->
+                <img src="{{ url_for('static', filename='img/apple.jpg') }}" alt="Apple">
                 <h3><a href="/item/1">Fresh Apples</a></h3>
                 <p>$2.50 / kg</p>
                 <button>Add to Cart</button>
             </div>
             <div class="product-item">
-                <img src="/static/img/banana.jpg" alt="Banana">
+                <!-- Dynamically load image using url_for -->
+                <img src="{{ url_for('static', filename='img/banana.jpg') }}" alt="Banana">
                 <h3><a href="/item/2">Organic Bananas</a></h3>
                 <p>$1.20 / kg</p>
                 <button>Add to Cart</button>

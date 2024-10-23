@@ -19,6 +19,8 @@
 
     <main>
         <h2>{{ item.name }}</h2>
+        <!-- Dynamically load image using url_for -->
+        <img src="{{ url_for('static', filename='img/' + item.image) }}" alt="{{ item.name }}">
         <p><strong>Price:</strong> {{ item.price }}</p>
         <p>{{ item.description }}</p>
         <button>Add to Cart</button>
