@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket - Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Shop Fresh Groceries</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/cart">Cart</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="/static/img/apple.jpg" alt="Apple">
+                <h3><a href="/item/1">Fresh Apples</a></h3>
+                <p>$2.50 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="/static/img/banana.jpg" alt="Banana">
+                <h3><a href="/item/2">Organic Bananas</a></h3>
+                <p>$1.20 / kg</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FreshBasket. All rights reserved.</p>
+    </footer>
+</body>
+</html>

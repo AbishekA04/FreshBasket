@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - FreshBasket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/cart">Cart</a>
+            <a href="/user_dashboard">Dashboard</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-section">
+            <h2>My Orders</h2>
+            <a href="/view_orders" class="btn">View Orders</a>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Account Information</h2>
+            <a href="/update_profile" class="btn">Update Profile</a>
+            <a href="/change_password" class="btn">Change Password</a>
+        </section>
+
+        <section class="dashboard-section">
+            <h2>Shopping</h2>
+            <a href="/shop" class="btn">Continue Shopping</a>
+            <a href="/cart" class="btn">View Cart</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FreshBasket. All rights reserved.</p>
+    </footer>
+</body>
+</html>
