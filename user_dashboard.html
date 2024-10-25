@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard - FreshBasket</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="/static/img/styles.css">
 </head>
 <body>
     <header>
         <h1>User Dashboard</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/shop">Shop</a>
-            <a href="/cart">Cart</a>
-            <a href="/user_dashboard">Dashboard</a>
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="user_dashboard.html">Dashboard</a>
             <a href="/logout">Logout</a>
         </nav>
     </header>
@@ -32,8 +32,8 @@
 
         <section class="dashboard-section">
             <h2>Shopping</h2>
-            <a href="/shop" class="btn">Continue Shopping</a>
-            <a href="/cart" class="btn">View Cart</a>
+            <a href="shop.html" class="btn">Continue Shopping</a>
+            <a href="cart.html" class="btn">View Cart</a>
         </section>
     </main>
 

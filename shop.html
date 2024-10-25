@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreshBasket - Shop</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="/static/img/styles.css">
 </head>
 <body>
     <header>
         <h1>Shop Fresh Groceries</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/shop">Shop</a>
-            <a href="/cart">Cart</a>
-            <a href="/login">Login</a>
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Login</a>
         </nav>
     </header>
 
@@ -22,14 +22,14 @@
         <div class="product-list">
             <div class="product-item">
                 <!-- Dynamically load image using url_for -->
-                <img src="{{ url_for('static', filename='img/apple.jpg') }}" alt="Apple">
+                <img src="apple.jpg" alt="Apple">
                 <h3><a href="/item/1">Fresh Apples</a></h3>
                 <p>$2.50 / kg</p>
                 <button>Add to Cart</button>
             </div>
             <div class="product-item">
                 <!-- Dynamically load image using url_for -->
-                <img src="{{ url_for('static', filename='img/banana.jpg') }}" alt="Banana">
+                <img src="banana.jpg" alt="Banana">
                 <h3><a href="/item/2">Organic Bananas</a></h3>
                 <p>$1.20 / kg</p>
                 <button>Add to Cart</button>

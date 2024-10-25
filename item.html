@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshBasket - Cart</title>
+    <title>{{ item.name }} - FreshBasket</title>
     <link rel="stylesheet" href='/static/img/styles.css'>
 </head>
 <body>
     <header>
-        <h1>Your Cart</h1>
+        <h1>{{ item.name }}</h1>
         <nav>
             <a href="home.html">Home</a>
             <a href="shop.html">Shop</a>
@@ -18,14 +18,12 @@
     </header>
 
     <main>
-        <h2>Items in your Cart</h2>
-        <div class="cart-items">
-            <div class="cart-item">
-                <h3>Fresh Apples</h3>
-                <p>Quantity: 2kg</p>
-                <p>Price: $5.00</p>
-            </div>
-        </div>
+        <h2>{{ item.name }}</h2>
+        <!-- Dynamically load image using url_for -->
+        <img src="/static/img" alt="{{ item.name }}">
+        <p><strong>Price:</strong> {{ item.price }}</p>
+        <p>{{ item.description }}</p>
+        <button>Add to Cart</button>
     </main>
 
     <footer>
